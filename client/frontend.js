@@ -32,6 +32,8 @@ new Vue({
         },
         removeContact(id) {
 
+            this.contacts = this.contacts.filter(c=>c.id !== id)
+
         }
     }
 })
